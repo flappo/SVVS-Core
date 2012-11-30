@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="data.models.TournamentInvite" table="tournamentInvites">
+
+        <id name="tournamentInviteID" column="tournamentInviteID" type="integer">
+            <generator class="increment" />
+        </id>
+        
+        <many-to-one column="tournamentID" name="tournament" class="data.models.Tournament" />
+        <many-to-one column="roleID" name="sportsman" class="data.models.Sportsman" />
+        <many-to-one name="team" column="trainingTeamID" class="data.models.TrainingTeam"/>
+        
+        <property name="accepted" type="boolean">
+            <column name = "accepted" sql-type="bit"></column>
+        </property>
+        
+    </class>
+</hibernate-mapping>
