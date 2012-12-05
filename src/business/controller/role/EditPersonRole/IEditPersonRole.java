@@ -27,5 +27,5 @@ public interface IEditPersonRole extends Remote, IController {
 
     public List<IDepartmentDTO> loadDepartments() throws RemoteException;
 
-    public void EditPersonRole(IPersonDTO person, List<IRoleRightsDTO> roles, IDepartmentDTO department, ISportDTO sport) throws  RemoteException;
+    public void EditPersonRole(IPersonDTO person, IRoleRightsDTO roles, IDepartmentDTO department, ISportDTO sport) throws  RemoteException;
 }

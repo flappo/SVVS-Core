@@ -5,6 +5,7 @@
 package business.controller.role;
 
 import business.IController;
+import com.sun.corba.se.impl.corba.CORBAObjectImpl;
 import data.DTOs.IDepartmentDTO;
 import data.DTOs.IPersonDTO;
 import data.DTOs.IRoleDTO;
@@ -26,7 +27,7 @@ public interface IRoleController extends Remote, IController  {
     public List<IRoleRightsDTO> loadRoleRights() throws RemoteException;
     public List<IRoleRightsDTO> loadRoleRightsOfPerson(IPersonDTO person)throws RemoteException;
     //public void EditPersonRole(IPerson person, List<IRole> roles) throws  RemoteException;
-     public void EditPersonRole(IPersonDTO person, List<IRoleRightsDTO> roles, IDepartmentDTO department, ISportDTO sport)throws  RemoteException ;
+     public void EditPersonRole(IPersonDTO person, IRoleRightsDTO roles, IDepartmentDTO department, ISportDTO sport)throws  RemoteException ;
      public boolean hasRole(IPersonDTO person, String Rolename) throws RemoteException;
      public List<IRoleDTO> getRole(IPersonDTO person, String Rolename) throws RemoteException ;
 }

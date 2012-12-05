@@ -5,11 +5,12 @@
 package business;
 
 import java.rmi.Remote;
+import javax.ejb.EJBObject;
 
 /**
  *
  * @author phil
  */
-public interface IController extends Remote{
+public interface IController extends Remote, EJBObject{
     
 }

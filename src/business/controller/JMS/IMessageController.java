@@ -12,12 +12,13 @@ import data.DTOs.ITrainingTeamDTO;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.util.List;
+import javax.ejb.EJBObject;
 
 /**
  *
  * @author Evgeniya Spiegel
  */
-public interface IMessageController extends Remote, IController {
+public interface IMessageController extends EJBObject, Remote, IController {
 
     List<IMessage> LoadMessages(String username) throws RemoteException, Exception;
 

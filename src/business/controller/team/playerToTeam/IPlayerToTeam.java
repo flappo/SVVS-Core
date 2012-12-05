@@ -25,7 +25,7 @@ public interface IPlayerToTeam extends Remote, IController  {
   public LinkedList<ITrainingTeamDTO> loadTeams(String sportname) throws RemoteException;
   public LinkedList<ISportsmanTrainingTeamDTO> loadPlayersOfTeam(String TeamName) throws RemoteException;
   
-  public LinkedList<ISportsmanDTO> loadSportsman(String sportname, List<ISportsmanDTO> ignoreList)throws RemoteException;
+  public LinkedList<ISportsmanDTO> loadSportsman(String sportname/*, List<ISportsmanDTO> ignoreList*/)throws RemoteException;
   
   public ISportsmanTrainingTeamDTO AddPlayerToTeam(int TrainingTeamID, int SportsmanID, String position) throws RemoteException ;
 
