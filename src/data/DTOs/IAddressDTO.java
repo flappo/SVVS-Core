@@ -24,5 +24,7 @@ public interface IAddressDTO extends IDTO<IAddress>{
     
     void setCountry(ICountryDTO country)throws RemoteException ;
     ICountryDTO getCountry()throws RemoteException ;
+
+    String getValues() throws RemoteException;
     
 }

@@ -20,5 +20,7 @@ public interface IDTO<V extends IModel> extends Serializable, Remote{
    int getId()throws RemoteException ;
    
    void extract(V model)throws RemoteException ;
+   
+   String getValues() throws RemoteException;
 
 }
