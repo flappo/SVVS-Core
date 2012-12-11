@@ -12,5 +12,7 @@ import java.io.Serializable;
  */
 public interface IMessage extends Serializable{
     
+    String getReceiver();
     String getText();
+    void setReceiver(String receiver);
 }
