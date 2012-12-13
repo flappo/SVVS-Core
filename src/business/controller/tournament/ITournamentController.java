@@ -28,4 +28,6 @@ public interface ITournamentController extends Remote, IController {
     public LinkedList<ITournamentDTO> loadTournaments() throws RemoteException;
 
     public ITournament loadTournament(int ID) throws RemoteException;
+
+    ITournamentDTO loadTournamentDTO(int ID) throws RemoteException;
 }
