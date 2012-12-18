@@ -98,4 +98,5 @@ public class Sport implements ISport {
     public void setTournaments(List<ITournament> tournaments) {
         this.tournaments = tournaments;
     }
+    
 }

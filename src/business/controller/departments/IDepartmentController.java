@@ -20,4 +20,6 @@ public interface IDepartmentController extends Remote, IController {
     public List<IDepartmentDTO> loadDepartments() throws RemoteException;
 
     boolean isSportInDepartment(IDepartmentDTO dept, ISportDTO sport) throws RemoteException;
+
+    boolean isSportInDepartmentID(int departmentId, int sportId) throws RemoteException;
 }
